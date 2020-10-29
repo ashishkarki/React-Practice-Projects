@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: lightcyan;
+  color: rebeccapurple;
+  overflow-y: scroll;
+}
+
+.bookList {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 1rem auto 0.1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.book {
+  border: 2px groove goldenrod;
+  border-radius: 0.2rem;
+  padding: 1rem 2rem;
+  background: greenyellow;
+
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.book h1 {
+  font-weight: 800;
+  font-style: oblique;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.book .author {
+  color: blue;
+  text-shadow: 2px 2px 8px #ff0000;
+}
+
+.book p {
+  background-color: darkcyan;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media screen and (min-width: 768px) {
+  .bookList {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+  }
+}
