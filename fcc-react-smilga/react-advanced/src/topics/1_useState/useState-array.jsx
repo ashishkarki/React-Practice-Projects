@@ -2,6 +2,7 @@
 import React from 'react'
 import TextButtonCombo from '../../shared/ui/text-button-combo'
 import { data } from '../../data'
+import ComponentTitle from '../../shared/ui/component-title'
 
 function UseStateArray() {
     const [ people, setPeople ] = React.useState(data)
@@ -17,7 +18,7 @@ function UseStateArray() {
 
     return (
         <>
-            <h3>useState Array example</h3>
+            <ComponentTitle title='useState Array example' />
 
             {
                 people.map(person => {

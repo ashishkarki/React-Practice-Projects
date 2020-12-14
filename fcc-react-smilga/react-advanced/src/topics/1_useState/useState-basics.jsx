@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import TextButtonCombo from '../../shared/ui/text-button-combo'
+import ComponentTitle from '../../shared/ui/component-title'
 
 // all hooks start with "use"
 // the component that uses hook/s, its name must be camel-case
@@ -13,7 +14,7 @@ const UseStateBasics = () => {
 
     return (
         <>
-            <h3>useState basic example</h3>
+            <ComponentTitle title='useState basic example' />
 
             <TextButtonCombo text={ value } clickHandler={ clickHandler } />
         </>

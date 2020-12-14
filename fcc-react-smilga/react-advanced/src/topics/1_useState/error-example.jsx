@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ComponentTitle from '../../shared/ui/component-title'
 import TextButtonCombo from '../../shared/ui/text-button-combo'
 
 // Show cases how view state cannot be updated without some react state
@@ -13,9 +13,7 @@ const ErrorExample = () => {
 
     return (
         <>
-            <h3>
-                Error Example: without useState the view doesn't update.
-            </h3>
+            <ComponentTitle title='ErrorExample: without useState the view does not update' />
 
             <TextButtonCombo text={ title } clickHandler={ clickHandler } />
         </>

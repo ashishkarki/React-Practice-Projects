@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ComponentTitle from '../../shared/ui/component-title'
 import CustomButton from '../../shared/ui/custom-button'
 
 function UseStateObject() {
@@ -18,6 +19,8 @@ function UseStateObject() {
 
     return (
         <>
+            <ComponentTitle title='UseStateObject example' />
+
             <h3>{ person.name }</h3>
             <h3>{ person.age }</h3>
             <h3>{ person.message }</h3>

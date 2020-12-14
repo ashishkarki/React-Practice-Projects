@@ -10,6 +10,8 @@ function App() {
       <h2>React's Advanced Features</h2>
       <HorizontalSeparator thick="true" />
 
+
+
       <UseStateObject />
       <HorizontalSeparator />
 
