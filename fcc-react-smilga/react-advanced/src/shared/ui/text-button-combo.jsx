@@ -1,12 +1,15 @@
 import React from 'react'
+import CustomButton from './custom-button'
 
-const TextButtonCombo = ({ text, clickHandler }) => {
+const TextButtonCombo = ({ text, label, clickHandler }) => {
     return (
         <div>
-            <h4>Title is { text }</h4>
-            <button className="btn" type="button" onClick={ clickHandler }>
-                Click to change title
-            </button>
+            {
+                !!text ?
+                    <h4>Title is { text } </h4> :
+                    '' }
+
+            <CustomButton label={ label } clickHandler={ clickHandler } />
         </div>
     )
 }

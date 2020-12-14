@@ -121,7 +121,7 @@ p {
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   h3 {
@@ -160,7 +160,7 @@ p {
 
 .container {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -190,7 +190,7 @@ p {
   display: flex;
   justify-content: space-between;
   max-width: var(--fixed-width);
-  margin: 2rem auto;
+  margin: 1rem auto;
   align-items: center;
   border-radius: var(--radius);
 }
@@ -205,7 +205,7 @@ p {
 }
 
 .item {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .item h4 {

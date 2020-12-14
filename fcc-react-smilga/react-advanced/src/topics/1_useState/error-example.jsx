@@ -17,11 +17,6 @@ const ErrorExample = () => {
                 Error Example: without useState the view doesn't update.
             </h3>
 
-            {/* <h4>Title is { title }</h4>
-            <button className="btn" type="button" onClick={ clickHandler }>
-                Click to change title
-            </button> */}
-
             <TextButtonCombo text={ title } clickHandler={ clickHandler } />
         </>
     )
