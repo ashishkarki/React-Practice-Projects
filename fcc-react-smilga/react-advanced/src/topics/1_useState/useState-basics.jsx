@@ -7,8 +7,11 @@ import TextButtonCombo from '../../shared/ui/text-button-combo'
 // cannot call a hook conditionally
 const UseStateBasics = () => {
     const [ value, setValue ] = useState('Title 1')
+    let [counter, setCounter] = useState(1)
+
     const clickHandler = () => {
-        setValue(`Title 2 with random val: ${ (Math.random() * 100) / 100 }`)
+        setCounter(++counter)
+        setValue(`Title ${counter} with random val: ${ (Math.random() * 100) / 100 }`)
     }
 
     return (
