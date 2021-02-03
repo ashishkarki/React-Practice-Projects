@@ -236,7 +236,8 @@ p {
 .form {
   background-color: var(--clr-white);
   max-width: var(--fixed-width);
-  margin: 0 auto 4rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
   padding: 1rem 2rem;
   border-radius: var(--radius);
 }
@@ -270,7 +271,8 @@ p {
 
 .nav-links {
   max-width: var(--fixed-width);
-  margin: 0 auto 4rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }

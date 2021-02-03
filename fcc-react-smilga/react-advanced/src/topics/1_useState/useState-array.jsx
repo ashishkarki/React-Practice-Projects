@@ -5,17 +5,15 @@ import { data } from '../../data'
 
 function UseStateArray() {
     const [ people, setPeople ] = React.useState(data)
-    const textButtonComboLabel = people.length === 0 ? 'Refresh Items' : 'Clear Items'
-
     const handler = () => {
         const updatedPeople = people.length === 0 ? data : []
         setPeople(updatedPeople)
     }
-
     const deleteItem = (id) => {
         const newPeople = people.filter(person => person.id !== id)
         setPeople(newPeople)
     }
+    const textButtonComboLabel = people.length === 0 ? 'Refresh Items' : 'Clear Items'
 
     return (
         <>
