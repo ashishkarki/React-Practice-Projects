@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 
 import './index.css'
-import { books } from './books-data'
+import {books} from './books-data'
 import Book from './Book'
 
 // stateless functional component

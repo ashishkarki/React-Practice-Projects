@@ -2,23 +2,27 @@ import HorizontalSeparator from './shared/ui/horizontal-separator'
 import ErrorExample from './topics/1_useState/error-example'
 import UseStateArray from './topics/1_useState/useState-array'
 import UseStateBasics from './topics/1_useState/useState-basics'
+import UseStateSimpleCounter from './topics/1_useState/useState-simpleCounter'
 
 function App() {
-  return (
-    <div className="container">
-      <h2>React's Advanced Features</h2>
-      <HorizontalSeparator thick="true" />
+    return (
+        <div className="container">
+            <h2>React's Advanced Features</h2>
+            <HorizontalSeparator thick="true"/>
 
-      <UseStateArray />
-      <HorizontalSeparator />
+            <UseStateSimpleCounter />
+            <HorizontalSeparator/>
 
-      <UseStateBasics />
-      <HorizontalSeparator />
+            <UseStateArray/>
+            <HorizontalSeparator/>
 
-      <ErrorExample />
-      <HorizontalSeparator />
-    </div>
-  )
+            <UseStateBasics/>
+            <HorizontalSeparator/>
+
+            <ErrorExample/>
+            <HorizontalSeparator/>
+        </div>
+    )
 }
 
 export default App

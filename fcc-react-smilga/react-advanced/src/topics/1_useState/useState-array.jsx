@@ -1,7 +1,6 @@
-
 import React from 'react'
 import TextButtonCombo from '../../shared/ui/text-button-combo'
-import { data } from '../../data'
+import {data} from '../../data'
 
 function UseStateArray() {
     const [ people, setPeople ] = React.useState(data)
