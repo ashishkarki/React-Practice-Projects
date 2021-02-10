@@ -5,6 +5,7 @@ import UseStateBasics from './topics/1_useState/useState-basics'
 import UseStateSimpleCounter from './topics/1_useState/useState-simpleCounter'
 import UseEffectBasics from "./topics/2_useEffect/useEffect-basics";
 import UseEffectCleanup from "./topics/2_useEffect/useEffect-cleanup";
+import UseEffectFetchData from "./topics/2_useEffect/useEffect-fetchData";
 
 function App() {
     return (
@@ -20,6 +21,8 @@ function App() {
 
             <UseEffectCleanup/>
             <HorizontalSeparator/>
+
+            <UseEffectFetchData />
 
             <HorizontalSeparator thick="true"/>
             <h3>React's useState Hook Examples</h3>
