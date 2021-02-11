@@ -1,11 +1,11 @@
+import React from 'react'
+
 import HorizontalSeparator from './shared/ui/horizontal-separator'
-import ErrorExample from './topics/1_useState/error-example'
-import UseStateArray from './topics/1_useState/useState-array'
-import UseStateBasics from './topics/1_useState/useState-basics'
-import UseStateSimpleCounter from './topics/1_useState/useState-simpleCounter'
 import UseEffectBasics from "./topics/2_useEffect/useEffect-basics";
 import UseEffectCleanup from "./topics/2_useEffect/useEffect-cleanup";
-import UseEffectFetchData from "./topics/2_useEffect/useEffect-fetchData";
+import MultipleReturns from "./topics/3_conditionalRendering/multiple-returns";
+import ShortCircuit from "./topics/3_conditionalRendering/short-circuit";
+import ShowHide from './topics/3_conditionalRendering/show-hide'
 
 function App() {
     return (
@@ -13,6 +13,19 @@ function App() {
             <h2>React's Advanced Features</h2>
             <HorizontalSeparator thick="true"/>
 
+            <h3>React Conditional Rendering</h3>
+            <HorizontalSeparator/>
+
+            <MultipleReturns />
+            <HorizontalSeparator />
+
+            <ShortCircuit />
+            <HorizontalSeparator />
+
+            <ShowHide />
+            <HorizontalSeparator />
+
+            <HorizontalSeparator thick="true"/>
             <h3>React's useEffect Hook Examples</h3>
             <HorizontalSeparator/>
 
@@ -22,22 +35,23 @@ function App() {
             <UseEffectCleanup/>
             <HorizontalSeparator/>
 
-            <UseEffectFetchData />
+            {/*<UseEffectFetchData/>*/}
+            {/*<HorizontalSeparator/>*/}
 
-            <HorizontalSeparator thick="true"/>
-            <h3>React's useState Hook Examples</h3>
+            {/*<HorizontalSeparator thick="true"/>*/}
+            {/*<h3>React's useState Hook Examples</h3>*/}
 
-            <UseStateSimpleCounter/>
-            <HorizontalSeparator/>
+            {/*<UseStateSimpleCounter/>*/}
+            {/*<HorizontalSeparator/>*/}
 
-            <UseStateArray/>
-            <HorizontalSeparator/>
+            {/*<UseStateArray/>*/}
+            {/*<HorizontalSeparator/>*/}
 
-            <UseStateBasics/>
-            <HorizontalSeparator/>
+            {/*<UseStateBasics/>*/}
+            {/*<HorizontalSeparator/>*/}
 
-            <ErrorExample/>
-            <HorizontalSeparator/>
+            {/*<ErrorExample/>*/}
+            {/*<HorizontalSeparator/>*/}
         </div>
     )
 }
