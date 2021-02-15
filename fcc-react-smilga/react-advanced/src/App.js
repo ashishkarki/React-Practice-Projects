@@ -2,6 +2,7 @@ import React from 'react'
 
 import HorizontalSeparator from './shared/ui/horizontal-separator'
 import ControlledInputs from './topics/4_forms/controlled-inputs';
+import MultipleInputs from "./topics/4_forms/multiple-inputs";
 
 function App() {
     return (
@@ -13,6 +14,9 @@ function App() {
             <HorizontalSeparator/>
 
             <ControlledInputs/>
+            <HorizontalSeparator/>
+
+            <MultipleInputs/>
             <HorizontalSeparator/>
 
             {/*<h3>React Conditional Rendering</h3>*/}
