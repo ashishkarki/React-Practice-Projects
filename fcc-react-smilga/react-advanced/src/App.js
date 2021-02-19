@@ -1,8 +1,7 @@
 import React from 'react'
 
 import HorizontalSeparator from './shared/ui/horizontal-separator'
-import ControlledInputs from './topics/4_forms/controlled-inputs';
-import MultipleInputs from "./topics/4_forms/multiple-inputs";
+import UseRefBasics from "./topics/5_useRef/useRef-basics";
 
 function App() {
     return (
@@ -10,14 +9,18 @@ function App() {
             <h2>React's Advanced Features</h2>
             <HorizontalSeparator thick="true"/>
 
-            <h3>React Forms</h3>
+            <h3>React UseRef</h3>
+            <UseRefBasics/>
             <HorizontalSeparator/>
 
-            <ControlledInputs/>
-            <HorizontalSeparator/>
+            {/*<h3>React Forms</h3>*/}
+            {/*<HorizontalSeparator/>*/}
 
-            <MultipleInputs/>
-            <HorizontalSeparator/>
+            {/*<ControlledInputs/>*/}
+            {/*<HorizontalSeparator/>*/}
+
+            {/*<MultipleInputs/>*/}
+            {/*<HorizontalSeparator/>*/}
 
             {/*<h3>React Conditional Rendering</h3>*/}
             {/*<HorizontalSeparator/>*/}
