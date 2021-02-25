@@ -1,17 +1,21 @@
 import React from 'react'
 
 import HorizontalSeparator from './shared/ui/horizontal-separator'
-import UseRefBasics from "./topics/5_useRef/useRef-basics";
+import UseReducer from './topics/6_useReducer'
 
 function App() {
     return (
-        <div className="container">
+        <div className='container'>
             <h2>React's Advanced Features</h2>
-            <HorizontalSeparator thick="true"/>
+            <HorizontalSeparator thick='true'/>
 
-            <h3>React UseRef</h3>
-            <UseRefBasics/>
+            <h3>React UseReducer</h3>
+            <UseReducer/>
             <HorizontalSeparator/>
+
+            {/*<h3>React UseRef</h3>*/}
+            {/*<UseRefBasics/>*/}
+            {/*<HorizontalSeparator/>*/}
 
             {/*<h3>React Forms</h3>*/}
             {/*<HorizontalSeparator/>*/}
@@ -34,7 +38,7 @@ function App() {
             {/*<ShowHide />*/}
             {/*<HorizontalSeparator />*/}
 
-            {/*<HorizontalSeparator thick="true"/>*/}
+            {/*<HorizontalSeparator thick='true'/>*/}
             {/*<h3>React's useEffect Hook Examples</h3>*/}
             {/*<HorizontalSeparator/>*/}
 
@@ -47,7 +51,7 @@ function App() {
             {/*<UseEffectFetchData/>*/}
             {/*<HorizontalSeparator/>*/}
 
-            {/*<HorizontalSeparator thick="true"/>*/}
+            {/*<HorizontalSeparator thick='true'/>*/}
             {/*<h3>React's useState Hook Examples</h3>*/}
 
             {/*<UseStateSimpleCounter/>*/}
