@@ -2,7 +2,7 @@ import React from 'react'
 
 import HorizontalSeparator from './shared/ui/horizontal-separator'
 import UseReducer from './topics/6_useReducer'
-import PropDrillingExample from "./topics/7_propDrilling/propDrillingExample";
+import UseContextExample from "./topics/7_propDrilling/useContextExample";
 
 function App() {
     return (
@@ -10,8 +10,9 @@ function App() {
             <h2>React's Advanced Features</h2>
             <HorizontalSeparator thick='true'/>
 
-            <h4>React Prop Drilling Example</h4>
-            <PropDrillingExample/>
+            <h4>React context Example</h4>
+            {/*<PropDrillingExample/>*/}
+            <UseContextExample/>
             <HorizontalSeparator/>
 
             <h3>React UseReducer</h3>
