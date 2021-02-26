@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-const Modal = () => {
-    return <>
-        hello reducer modal
-    </>
+const Modal = ({modalContent, closeModal}) => {
+    useEffect(() => {
+        setTimeout(() => {
+            closeModal()
+        }, 2500)
+    })
+
+    return <div className="modal">
+        <p>
+            {modalContent}
+        </p>
+    </div>
 }
 
 export default Modal

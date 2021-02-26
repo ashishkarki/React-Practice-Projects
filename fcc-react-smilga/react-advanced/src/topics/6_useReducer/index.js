@@ -1,42 +1,61 @@
-import React, {useState} from 'react';
-import {data} from '../../data'
+import React, {useReducer, useState} from 'react';
 import Modal from './modal';
+import {ACTION_TYPES, reducer} from './reducer'
+
+const defaultState = {
+    people: [],
+    isModalOpen: false,
+    modalContent: 'Hello Modal'
+}
 
 const Index = () => {
     const [name, setName] = useState('')
-    const [people, setPeople] = useState(data)
-    const [showModal, setShowModal] = useState(false)
+
+    // const [showModal, setShowModal] = useState(false)
+    const [state, dispatch] = useReducer(
+        reducer,
+        defaultState
+    )
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
         if (name) {
-            setShowModal(true)
-            setPeople([...people, {
+            const newItem = {
                 id: new Date().getTime().toString(),
                 name: name
-            }])
-
+            }
+            dispatch({
+                type: ACTION_TYPES.ADD_ITEM,
+                payload: newItem,
+            })
             setName('')
         } else {
-            setShowModal(true)
+            dispatch({
+                type: ACTION_TYPES.NO_ITEM
+            })
         }
     }
 
+    const closeModal = () => {
+        dispatch({
+            type: ACTION_TYPES.CLOSE_MODAL,
+        })
+    }
+
     return <>
-        <br/>
-        <hr/>
-        <h3>UseReducer Example</h3>
+        {
+            state.isModalOpen &&
+            <Modal className='modal'
+                   modalContent={state.modalContent}
+                   closeModal={closeModal}/>
+        }
 
-        {showModal && <Modal/>}
-
-        <form onSubmit={handleSubmit}>
-            <div>
-                <input type='text'
-                       value={name}
-                       placeholder='Please type person name'
-                       onChange={(evt) => setName(evt.target.value)}/>
-            </div>
+        <form onSubmit={handleSubmit} className='form'>
+            <input type='text'
+                   value={name}
+                   placeholder='Please type person name'
+                   onChange={(evt) => setName(evt.target.value)}/>
 
             <button type='submit' className='btn'>
                 Add
@@ -45,10 +64,17 @@ const Index = () => {
 
         <br/>
         <h4>List of People/anything</h4>
+
         {
-            people.map(person => {
+            state.people.map(person => {
                 return <div key={person.id} className='item'>
                     <h4>{person.name}</h4>
+                    <button onClick={() => dispatch({
+                        type: ACTION_TYPES.REMOVE_ITEM,
+                        payload: person
+                    })}>
+                        Delete
+                    </button>
                 </div>
             })
         }
