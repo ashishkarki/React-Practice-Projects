@@ -2,12 +2,17 @@ import React from 'react'
 
 import HorizontalSeparator from './shared/ui/horizontal-separator'
 import UseReducer from './topics/6_useReducer'
+import PropDrillingExample from "./topics/7_propDrilling/propDrillingExample";
 
 function App() {
     return (
         <div className='container'>
             <h2>React's Advanced Features</h2>
             <HorizontalSeparator thick='true'/>
+
+            <h4>React Prop Drilling Example</h4>
+            <PropDrillingExample/>
+            <HorizontalSeparator/>
 
             <h3>React UseReducer</h3>
             <UseReducer/>

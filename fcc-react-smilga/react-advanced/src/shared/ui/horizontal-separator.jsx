@@ -5,7 +5,7 @@ const HorizontalSeparator = (props) => {
         'margin': '1rem auto',
         'border': '1px groove salmon',
         'backgroundColor': 'salmon',
-        'height': !!props.thick && props.thick ? '6px' : '3px'
+        'height': !!props.thick && props.thick ? '5px' : '2px'
     }
 
     return (
