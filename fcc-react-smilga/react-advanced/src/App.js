@@ -1,8 +1,7 @@
 import React from 'react'
 
 import HorizontalSeparator from './shared/ui/horizontal-separator'
-import UseReducer from './topics/6_useReducer'
-import UseContextExample from "./topics/7_propDrilling/useContextExample";
+import FetchExample from "./topics/9_customHooks/fetchExample";
 
 function App() {
     return (
@@ -10,14 +9,18 @@ function App() {
             <h2>React's Advanced Features</h2>
             <HorizontalSeparator thick='true'/>
 
-            <h4>React context Example</h4>
-            {/*<PropDrillingExample/>*/}
-            <UseContextExample/>
+            <h4>React Custom Hooks</h4>
+            <FetchExample/>
             <HorizontalSeparator/>
 
-            <h3>React UseReducer</h3>
-            <UseReducer/>
-            <HorizontalSeparator/>
+            {/*<h4>React context Example</h4>*/}
+            {/*<PropDrillingExample/>*/}
+            {/*<UseContextExample/>*/}
+            {/*<HorizontalSeparator/>*/}
+
+            {/*<h3>React UseReducer</h3>*/}
+            {/*<UseReducer/>*/}
+            {/*<HorizontalSeparator/>*/}
 
             {/*<h3>React UseRef</h3>*/}
             {/*<UseRefBasics/>*/}
