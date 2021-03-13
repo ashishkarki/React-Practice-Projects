@@ -1,7 +1,7 @@
 import React from 'react'
 
 import HorizontalSeparator from './shared/ui/horizontal-separator'
-import Index from "./topics/10_propTypes";
+import ReactRouterSetup from './topics/11_reactRouter'
 
 function App() {
     return (
@@ -9,8 +9,11 @@ function App() {
             <h2>React's Advanced Features</h2>
             <HorizontalSeparator thick='true'/>
 
-            <h4>React Prop types</h4>
-            <Index />
+            <h4>React Router</h4>
+            <ReactRouterSetup/>
+
+            {/*<h4>React Prop types</h4>*/}
+            {/*<Index />*/}
 
             {/*<h4>React Custom Hooks</h4>*/}
             {/*<FetchExample/>*/}
